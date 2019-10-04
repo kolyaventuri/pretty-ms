@@ -28,13 +28,3 @@ test('transforms the output of parseMs', t => {
 
 	t.deepEqual(result, expected);
 });
-
-test('throws out values equal to 0', t => {
-	const result = parse(17699);
-	const expected = [
-		{unit: SECONDS, value: 17},
-		{unit: MILLISECONDS, value: 699}
-	];
-
-	t.deepEqual(result, expected);
-});
