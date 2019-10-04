@@ -1,5 +1,5 @@
 import test from 'ava';
-import prettyMilliseconds from '.';
+import prettyMilliseconds from '../lib/pretty-ms';
 
 test('prettify milliseconds', t => {
 	t.is(prettyMilliseconds(0), '0ms');
